@@ -1,0 +1,21 @@
+POST http://localhost:8080/user/register
+Content-Type: application/json
+
+{
+    "username": "hsh",
+    "password": "986454",
+    "email": "235266347@qq.com",
+    "currentLevel": "N3"
+}
+
+> {%
+    // 响应断言
+    client.test("响应状态应为201", function() {
+        client.assert(response.status === 201, "响应状态不是201");
+    });
+
+    client.test("响应应包含用户ID", function() {
+          client.assert(response.body.json().userId !== null, "用户ID为空");
+});
+%}
+

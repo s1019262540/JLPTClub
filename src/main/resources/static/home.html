@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日语学习平台 - 学びましょう</title>
+    <link rel="stylesheet" href="css/question.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1>日本語学習</h1>
+            </div>
+            
+            <div class="user-info">
+                <div class="avatar">学</div>
+                <div class="user-details">
+                    <h3>学习者</h3>
+                    <span class="level">N4レベル</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-module="quiz">
+                        <i>📝</i> 答题练习
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-module="vocab">
+                        <i>📚</i> 单词记忆
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-module="reading">
+                        <i>📖</i> 阅读训练
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-module="listening">
+                        <i>🎧</i> 听力练习
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="progress-section">
+                <h3>学习进度</h3>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>词汇量</span>
+                        <span>650/2000</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 32.5%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>语法掌握</span>
+                        <span>45/120</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 37.5%"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>本月学习</span>
+                        <span>12/20天</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <div class="header">
+                <h2 class="module-title">答题练习</h2>
+                <div class="search-bar">
+                    <input type="text" placeholder="搜索单词、语法点...">
+                    <button>搜索</button>
+                </div>
+            </div>
+            
+            <!-- 答题模块 -->
+            <section id="quiz" class="module-content active">
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <div class="quiz-progress">问题 3/10</div>
+                        <div class="quiz-timer">剩余时间: 04:32</div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <p>次の文の（　）に入れるのに最もよいものを、１・２・３・４から一つ選びなさい。</p>
+                        <p>彼は約束の時間に（　）、まだ来ていない。</p>
+                    </div>
+                    
+                    <div class="quiz-options">
+                        <div class="quiz-option">1. 遅れそうで</div>
+                        <div class="quiz-option">2. 遅れるように</div>
+                        <div class="quiz-option selected">3. 遅れそうなのに</div>
+                        <div class="quiz-option">4. 遅れそうだから</div>
+                    </div>
+                    
+                    <div class="quiz-controls">
+                        <button class="btn btn-secondary">上一题</button>
+                        <button class="btn btn-primary">下一题</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 背词模块 -->
+            <section id="vocab" class="module-content">
+                <div class="vocab-container">
+                    <div class="vocab-card">
+                        <h3>今日单词</h3>
+                        <div class="vocab-japanese">頑張る</div>
+                        <div class="vocab-reading">がんばる</div>
+                        <div class="vocab-meaning">努力，加油</div>
+                        <div class="vocab-example">試験に合格するように頑張ります。（我会努力通过考试。）</div>
+                        <div class="vocab-controls">
+                            <button class="btn btn-secondary">不认识</button>
+                            <button class="btn btn-primary">认识</button>
+                        </div>
+                    </div>
+                    
+                    <div class="vocab-card">
+                        <h3>单词详情</h3>
+                        <div class="vocab-info">
+                            <p><strong>词性:</strong> 动词</p>
+                            <p><strong>分类:</strong> 日常用语</p>
+                            <p><strong>难度:</strong> N5</p>
+                            <p><strong>记忆技巧:</strong> "頑"表示顽固，"張る"表示伸展，合起来表示坚持努力</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 阅读模块 -->
+            <section id="reading" class="module-content">
+                <div class="reading-container">
+                    <h3>阅读练习 - 日本的文化</h3>
+                    <div class="reading-passage">
+                        <p>日本の文化は長い歴史を持っています。伝統的な文化として、茶道、華道、書道などがあります。また、現代の文化としては、アニメ、漫画、J-POPなどが世界中で人気です。</p>
+                        <p>日本では、四季がはっきりしています。春には桜が咲き、多くの人々がお花見を楽しみます。夏には祭りや花火大会があり、秋には紅葉を鑑賞し、冬には雪景色を楽しむことができます。</p>
+                    </div>
+                    
+                    <div class="reading-questions">
+                        <div class="reading-question">
+                            <p>1. 日本の伝統的な文化として正しくないものはどれですか？</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option">茶道</div>
+                                <div class="quiz-option">華道</div>
+                                <div class="quiz-option">書道</div>
+                                <div class="quiz-option">J-POP</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 听力模块 -->
+            <section id="listening" class="module-content">
+                <div class="listening-container">
+                    <h3>听力练习 - 日常对话</h3>
+                    <div class="audio-player">
+                        <!-- 这里可以放置音频播放器 -->
+                        <div style="background: #f0f0f0; padding: 20px; text-align: center; border-radius: var(--border-radius);">
+                            <p>音频播放器区域</p>
+                            <button class="btn btn-primary">播放音频</button>
+                        </div>
+                    </div>
+                    
+                    <div class="transcript">
+                        <p><strong>对话内容:</strong></p>
+                        <p>A: すみません、駅はどこですか？</p>
+                        <p>B: まっすぐ行って、二つ目の角を右に曲がってください。</p>
+                        <p>A: ありがとうございます。</p>
+                    </div>
+                    
+                    <div class="reading-questions">
+                        <div class="reading-question">
+                            <p>質問: 駅へ行くにはどうすればいいですか？</p>
+                            <div class="quiz-options">
+                                <div class="quiz-option">まっすぐ行って、一つ目の角を右に曲がる</div>
+                                <div class="quiz-option selected">まっすぐ行って、二つ目の角を右に曲がる</div>
+                                <div class="quiz-option">まっすぐ行って、三つ目の角を右に曲がる</div>
+                                <div class="quiz-option">まっすぐ行って、二つ目の角を左に曲がる</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // 模块切换功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const moduleContents = document.querySelectorAll('.module-content');
+            const moduleTitles = document.querySelectorAll('.module-title');
+            
+            // 模块标题映射
+            const titleMap = {
+                'quiz': '答题练习',
+                'vocab': '单词记忆',
+                'reading': '阅读训练',
+                'listening': '听力练习'
+            };
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // 移除所有活动状态
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    moduleContents.forEach(c => c.classList.remove('active'));
+                    
+                    // 添加当前活动状态
+                    this.classList.add('active');
+                    const moduleId = this.getAttribute('data-module');
+                    document.getElementById(moduleId).classList.add('active');
+                    
+                    // 更新模块标题
+                    document.querySelector('.module-title').textContent = titleMap[moduleId];
+                });
+            });
+            
+            // 答题选项选择功能
+            const quizOptions = document.querySelectorAll('.quiz-option');
+            quizOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    // 移除其他选项的选择状态
+                    quizOptions.forEach(opt => opt.classList.remove('selected'));
+                    // 设置当前选项为选中状态
+                    this.classList.add('selected');
+                });
+            });
+            
+            // 背词模块按钮功能
+            const vocabButtons = document.querySelectorAll('.vocab-controls .btn');
+            vocabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (this.textContent === '认识') {
+                        alert('已标记为已掌握！将减少出现频率。');
+                    } else {
+                        alert('已标记为需复习！将增加出现频率。');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
