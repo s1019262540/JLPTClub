@@ -1,6 +1,7 @@
 package com.jlpt.jlptclub.service;
 
 import com.jlpt.jlptclub.domain.Vocabulary;
+import com.jlpt.jlptclub.service.Impl.VocabularyServiceImpl;
 import com.jlpt.jlptclub.utils.CurrentLevel;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,11 +10,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
-class VocabularyServiceTest {
+class VocabularyServiceImplTest {
     @Autowired
-    private  VocabularyService vocabularyService;
+    private VocabularyServiceImpl vocabularyServiceImpl;
 
 
     @Test
@@ -24,12 +24,12 @@ class VocabularyServiceTest {
         vocabulary.setJapanese("しばらく");
         vocabulary.setMeaning("暂时");
         vocabulary.setAddedDate(LocalDateTime.now());
-        Vocabulary vocabulary1 = vocabularyService.addVocabulary(vocabulary);
+        Vocabulary vocabulary1 = vocabularyServiceImpl.addVocabulary(vocabulary);
         System.out.println(vocabulary1);
     }
     @Test
     void getVocabulary(){
-        List<Vocabulary> vocabulary = vocabularyService.getVocabulary();
+        List<Vocabulary> vocabulary = vocabularyServiceImpl.getVocabulary();
         System.out.println("======================================="+vocabulary);
 }
 }

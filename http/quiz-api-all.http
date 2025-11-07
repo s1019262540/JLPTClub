@@ -1,4 +1,5 @@
-GET http://localhost:8080/quiz/all?page=0&size=5&sort=questionType,desc
+
+GET http://localhost:8080/quiz/all?page=0&size=5&sort=questionType,asc
 Content-Type: application/json
 
 > {%
