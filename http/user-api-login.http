@@ -10,5 +10,6 @@ Content-Type: application/x-www-form-urlencoded
     // 响应断言
     client.test("响应状态应为201", function() {
         client.assert(response.status === 201, "响应状态不是201");
+
     });
 %}

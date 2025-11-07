@@ -1,0 +1,10 @@
+
+GET http://localhost:8080/quiz/all?page=0&size=5&sort=questionType,asc
+Content-Type: application/json
+
+> {%
+client.test("响应状态为201",function (){
+    client.log(response.body)
+});
+
+ %}
